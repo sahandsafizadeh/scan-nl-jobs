@@ -12,7 +12,7 @@ export async function booking(page) {
     .click();
   await page.locator(".mat-select-arrow.ng-tns-c65-3").click();
   await page.locator("#mat-option-73 > .mat-pseudo-checkbox").click();
-  await page.waitForTimeout(2000);
+  await page.waitForTimeout(1000);
 
   const items = await page
     .locator(

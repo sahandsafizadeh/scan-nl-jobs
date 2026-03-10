@@ -11,7 +11,7 @@ export async function adyen(page) {
   await page.getByRole("combobox", { name: "Location" }).click();
   await page.getByRole("combobox", { name: "Location" }).fill("am");
   await page.getByRole("option", { name: "amsterdam Amsterdam" }).click();
-  await page.waitForTimeout(2000);
+  await page.waitForTimeout(1000);
 
   const items = await page
     .locator(

@@ -7,7 +7,7 @@ export async function ing(page) {
   await page.locator("label").filter({ hasText: "Full time" }).click();
   await page.locator("label").filter({ hasText: "IT Engineering" }).click();
   await page.locator("label").filter({ hasText: "IT Architecture" }).click();
-  await page.waitForTimeout(2000);
+  await page.waitForTimeout(1000);
 
   const items = await page
     .locator("h2.search-results-item__title.vacancy-item__title")

@@ -14,7 +14,7 @@ export async function flowtraders(page) {
     .click();
   await page.locator("div").filter({ hasText: "Keyword" }).nth(2).click();
   await page.getByRole("button", { name: "Search" }).click();
-  await page.waitForTimeout(2000);
+  await page.waitForTimeout(1000);
 
   const items = await page
     .locator("h2")
