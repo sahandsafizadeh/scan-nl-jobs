@@ -1,13 +1,22 @@
 {
   "name": "scan-nl-jobs",
   "version": "1.0.0",
-  "description": "automate Netherlands careers visiting",
+  "description": "Automates visiting and scraping job postings on career sites",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "author": "Sahand Safizadeh",
   "license": "MIT",
+  "keywords": [
+    "jobs",
+    "automation",
+    "playwright",
+    "crawler"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
   "dependencies": {
     "playwright": "^1.58.2"
   }
