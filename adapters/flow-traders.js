@@ -1,7 +1,6 @@
-import { matches } from "../utils/utils.js";
+import { collectJobs } from "../utils";
 
 export async function flowtraders(page) {
-  // ---------- find jobs ----------
   await page.goto("https://www.flowtraders.com/careers/job-search");
   await page.getByRole("button", { name: "Accept all" }).click();
   await page.locator(".w-full.flex.items-center.h-4").first().click();
@@ -23,20 +22,9 @@ export async function flowtraders(page) {
     .filter({ hasClass: /text-\[#161616\]/ })
     .all();
 
-  // ---------- process results ----------
-  const result = {
-    company: "Flow Traders",
-    description:
-      "Global financial liquidity provider that specializes in exchange-traded products (ETPs).",
-    jobs: [],
-  };
-
-  for (const item of items) {
-    const title = await item.textContent();
-    if (matches(title)) {
-      result.jobs.push(title);
-    }
-  }
-
-  return result;
+  return collectJobs(
+    "Flow Traders",
+    "Global financial liquidity provider that specializes in exchange-traded products (ETPs).",
+    items,
+  );
 }

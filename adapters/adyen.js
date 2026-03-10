@@ -1,7 +1,6 @@
-import { matches } from "../utils/utils.js";
+import { collectJobs } from "../utils";
 
 export async function adyen(page) {
-  // ---------- find jobs ----------
   await page.goto("https://careers.adyen.com/vacancies");
   await page.getByRole("button", { name: "Accept All Cookies" }).click();
   await page.getByRole("combobox", { name: "Team" }).click();
@@ -20,19 +19,5 @@ export async function adyen(page) {
     )
     .all();
 
-  // ---------- process results ----------
-  const result = {
-    company: "Adyen",
-    description: "Global financial technology platform.",
-    jobs: [],
-  };
-
-  for (const item of items) {
-    const title = await item.textContent();
-    if (matches(title)) {
-      result.jobs.push(title);
-    }
-  }
-
-  return result;
+  return collectJobs("Adyen", "Global financial technology platform.", items);
 }

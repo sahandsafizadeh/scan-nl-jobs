@@ -1,7 +1,6 @@
-import { matches } from "../utils/utils.js";
+import { collectJobs } from "../utils";
 
 export async function picnic(page) {
-  // ---------- find jobs ----------
   await page.goto("https://jobs.picnic.app/en/vacancies");
   await page.getByRole("button", { name: "Accept" }).click();
   await page.getByRole("checkbox", { name: "Netherlands" }).check();
@@ -15,19 +14,9 @@ export async function picnic(page) {
     )
     .all();
 
-  // ---------- process results ----------
-  const result = {
-    company: "Picnic",
-    description: "Picnic is a Dutch online grocery delivery service.",
-    jobs: [],
-  };
-
-  for (const item of items) {
-    const title = await item.textContent();
-    if (matches(title)) {
-      result.jobs.push(title);
-    }
-  }
-
-  return result;
+  return collectJobs(
+    "Picnic",
+    "Picnic is a Dutch online grocery delivery service.",
+    items,
+  );
 }

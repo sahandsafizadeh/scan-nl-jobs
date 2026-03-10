@@ -1,7 +1,6 @@
-import { matches } from "../utils/utils.js";
+import { collectJobs } from "../utils";
 
 export async function bunq(page) {
-  // ---------- find jobs ----------
   await page.goto("https://careers.bunq.com/positions");
   await page.getByRole("button", { name: "Accept all" }).click();
   await page.getByText("Netherlands").click();
@@ -12,19 +11,5 @@ export async function bunq(page) {
     .locator("h3.framer-text.framer-styles-preset-1aceiqc")
     .all();
 
-  // ---------- process results ----------
-  const result = {
-    company: "Bunq",
-    description: "Bunq is a Dutch digital banking app.",
-    jobs: [],
-  };
-
-  for (const item of items) {
-    const title = await item.textContent();
-    if (matches(title)) {
-      result.jobs.push(title);
-    }
-  }
-
-  return result;
+  return collectJobs("Bunq", "Bunq is a Dutch digital banking app.", items);
 }

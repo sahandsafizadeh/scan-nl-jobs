@@ -1,7 +1,6 @@
-import { matches } from "../utils/utils.js";
+import { collectJobs } from "../utils";
 
 export async function booking(page) {
-  // ---------- find jobs ----------
   await page.goto("https://jobs.booking.com/booking/jobs");
   await page.getByRole("button", { name: "Accept all cookies" }).click();
   await page.getByRole("combobox", { name: "Search Location" }).click();
@@ -21,19 +20,9 @@ export async function booking(page) {
     )
     .all();
 
-  // ---------- process results ----------
-  const result = {
-    company: "Booking.com",
-    description: "Booking.com is a Dutch online travel agency.",
-    jobs: [],
-  };
-
-  for (const item of items) {
-    const title = await item.textContent();
-    if (matches(title)) {
-      result.jobs.push(title);
-    }
-  }
-
-  return result;
+  return collectJobs(
+    "Booking.com",
+    "Booking.com is a Dutch online travel agency.",
+    items,
+  );
 }
