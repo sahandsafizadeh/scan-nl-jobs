@@ -1,4 +1,4 @@
-import { collectJobs } from "../utils";
+import { collectJobs } from "../utils/index.js";
 
 export async function adyen(page) {
   await page.goto("https://careers.adyen.com/vacancies");

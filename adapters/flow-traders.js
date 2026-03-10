@@ -1,4 +1,4 @@
-import { collectJobs } from "../utils";
+import { collectJobs } from "../utils/index.js";
 
 export async function flowtraders(page) {
   await page.goto("https://www.flowtraders.com/careers/job-search");

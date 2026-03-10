@@ -1,4 +1,4 @@
-import { collectJobs } from "../utils";
+import { collectJobs } from "../utils/index.js";
 
 export async function ing(page) {
   await page.goto("https://careers.ing.com/en/search-jobs");

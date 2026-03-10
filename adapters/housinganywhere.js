@@ -1,4 +1,4 @@
-import { collectJobs } from "../utils";
+import { collectJobs } from "../utils/index.js";
 
 export async function housinganywhere(page) {
   await page.goto("https://job-boards.greenhouse.io/housinganywhere");

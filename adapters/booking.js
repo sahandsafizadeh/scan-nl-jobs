@@ -1,4 +1,4 @@
-import { collectJobs } from "../utils";
+import { collectJobs } from "../utils/index.js";
 
 export async function booking(page) {
   await page.goto("https://jobs.booking.com/booking/jobs");

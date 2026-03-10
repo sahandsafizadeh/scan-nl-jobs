@@ -1,4 +1,4 @@
-import { collectJobs } from "../utils";
+import { collectJobs } from "../utils/index.js";
 
 export async function bunq(page) {
   await page.goto("https://careers.bunq.com/positions");

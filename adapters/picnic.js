@@ -1,4 +1,4 @@
-import { collectJobs } from "../utils";
+import { collectJobs } from "../utils/index.js";
 
 export async function picnic(page) {
   await page.goto("https://jobs.picnic.app/en/vacancies");

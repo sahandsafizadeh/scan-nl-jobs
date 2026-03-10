@@ -1,4 +1,4 @@
-import { matches } from "../matcher";
+import { matches } from "../matcher/index.js";
 
 export async function collectJobs(company, description, items) {
   const result = {
