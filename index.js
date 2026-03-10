@@ -3,16 +3,17 @@ import { chromium } from "playwright";
 import { adapters } from "./adapters/index.js";
 
 (async () => {
-  const browser = await chromium.launch({ headless: true });
+  const browser = await chromium.launch({ headless: false });
   const context = await browser.newContext();
   const page = await context.newPage();
 
-  const adapterResults = await Promise.all(
-    adapters.map((adapter) => adapter(page)),
-  );
-  const results = adapterResults.filter(
-    (result) => result.jobs && result.jobs.length > 0,
-  );
+  const results = [];
+  for (const adapter of adapters) {
+    const result = await adapter(page);
+    if (result.jobs && result.jobs.length > 0) {
+      results.push(result);
+    }
+  }
 
   await writeFile("matched-jobs.json", JSON.stringify(results, null, 2));
 
