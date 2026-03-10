@@ -1,3 +1,8 @@
+// This module exposes configuration logic for determining whether a job title
+// matches the user's preferences. It's packaged separately so that different
+// parts of the system can import it as a distinct concern, and it can even
+// be published if desired.
+
 const languageKeywords = new Set(["go", "golang", "java"]);
 const roleKeywords = new Set(["developer", "engineer"]);
 const otherKeywords = new Set([
