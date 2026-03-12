@@ -6,12 +6,16 @@ export async function booking(page) {
   await page.getByRole("combobox", { name: "Search Location" }).click();
   await page.getByRole("combobox", { name: "Search Location" }).fill("Nether");
   await page
-    .locator("span")
-    .filter({ hasText: /^Netherlands$/ })
+    .locator("span.mat-option-text")
+    .filter({ hasText: /Netherlands/ })
     .first()
     .click();
   await page.locator(".mat-select-arrow.ng-tns-c65-3").click();
-  await page.locator("#mat-option-73 > .mat-pseudo-checkbox").click();
+  await page
+    .locator("span.mat-option-text")
+    .filter({ hasText: /^\W+Engineering\W+/ })
+    .first()
+    .click();
   await page.waitForTimeout(1000);
 
   const items = await page
