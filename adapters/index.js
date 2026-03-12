@@ -5,6 +5,7 @@ import { bunq } from "./bunq.js";
 import { flowtraders } from "./flow-traders.js";
 import { housinganywhere } from "./housinganywhere.js";
 import { ing } from "./ing.js";
+import { io } from "./io.js";
 import { picnic } from "./picnic.js";
 
 export const adapters = [
@@ -15,5 +16,6 @@ export const adapters = [
   flowtraders,
   housinganywhere,
   ing,
+  io,
   picnic,
 ];

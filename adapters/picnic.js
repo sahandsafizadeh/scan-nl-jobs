@@ -5,7 +5,6 @@ export async function picnic(page) {
   await page.getByRole("button", { name: "Accept" }).click();
   await page.getByRole("checkbox", { name: "Netherlands" }).check();
   await page.getByRole("checkbox", { name: "Engineering" }).check();
-  await page.getByRole("button", { name: "Show 3 more" }).click();
   await page.waitForTimeout(1000);
 
   const items = await page
