@@ -1,3 +1,4 @@
+import { abnamro } from "./abn-amro.js";
 import { adyen } from "./adyen.js";
 import { bol } from "./bol.js";
 import { booking } from "./booking.js";
@@ -10,6 +11,7 @@ import { io } from "./io.js";
 import { picnic } from "./picnic.js";
 
 export const adapters = [
+  abnamro,
   adyen,
   bol,
   booking,
