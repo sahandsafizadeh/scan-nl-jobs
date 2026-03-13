@@ -2,6 +2,7 @@ import { adyen } from "./adyen.js";
 import { bol } from "./bol.js";
 import { booking } from "./booking.js";
 import { bunq } from "./bunq.js";
+import { companyinfo } from "./company-info.js";
 import { flowtraders } from "./flow-traders.js";
 import { housinganywhere } from "./housinganywhere.js";
 import { ing } from "./ing.js";
@@ -13,6 +14,7 @@ export const adapters = [
   bol,
   booking,
   bunq,
+  companyinfo,
   flowtraders,
   housinganywhere,
   ing,
