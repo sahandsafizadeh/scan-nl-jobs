@@ -30,7 +30,7 @@ npm install
 Execute the main script from the root directory:
 
 ```sh
-node index.js
+npm start
 ```
 
 This will run all adapters, apply the matching logic, and write the results to `matched-jobs.json`. The structure looks like:
