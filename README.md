@@ -20,7 +20,7 @@ A lightweight Node.js utility that uses [Playwright](https://playwright.dev) to 
 ### Installation
 
 ```sh
-git clone <your-repo-url>
+git clone https://github.com/sahandsafizadeh/scan-nl-jobs.git
 cd scan-nl-jobs
 npm install
 ```
