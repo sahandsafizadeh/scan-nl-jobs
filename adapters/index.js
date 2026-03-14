@@ -9,6 +9,7 @@ import { flowtraders } from "./flow-traders.js";
 import { housinganywhere } from "./housinganywhere.js";
 import { ing } from "./ing.js";
 import { io } from "./io.js";
+import { lunatech } from "./lunatech.js";
 import { picnic } from "./picnic.js";
 import { studocu } from "./studoco.js";
 
@@ -24,6 +25,7 @@ export const adapters = [
   housinganywhere,
   ing,
   io,
+  lunatech,
   picnic,
   studocu,
 ];
