@@ -4,6 +4,7 @@ import { bol } from "./bol.js";
 import { booking } from "./booking.js";
 import { bunq } from "./bunq.js";
 import { companyinfo } from "./company-info.js";
+import { eurail } from "./eurail.js";
 import { flowtraders } from "./flow-traders.js";
 import { housinganywhere } from "./housinganywhere.js";
 import { ing } from "./ing.js";
@@ -18,6 +19,7 @@ export const adapters = [
   booking,
   bunq,
   companyinfo,
+  eurail,
   flowtraders,
   housinganywhere,
   ing,
