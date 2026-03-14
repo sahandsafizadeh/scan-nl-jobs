@@ -9,6 +9,7 @@ import { housinganywhere } from "./housinganywhere.js";
 import { ing } from "./ing.js";
 import { io } from "./io.js";
 import { picnic } from "./picnic.js";
+import { studocu } from "./studoco.js";
 
 export const adapters = [
   abnamro,
@@ -22,4 +23,5 @@ export const adapters = [
   ing,
   io,
   picnic,
+  studocu,
 ];
