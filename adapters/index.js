@@ -1,5 +1,6 @@
 import { abnamro } from "./abn-amro.js";
 import { adyen } from "./adyen.js";
+import { bitavo } from "./bitavo.js";
 import { bol } from "./bol.js";
 import { booking } from "./booking.js";
 import { bunq } from "./bunq.js";
@@ -16,6 +17,7 @@ import { studocu } from "./studoco.js";
 export const adapters = [
   abnamro,
   adyen,
+  bitavo,
   bol,
   booking,
   bunq,
