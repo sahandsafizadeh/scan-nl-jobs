@@ -11,6 +11,7 @@ import { housinganywhere } from "./housinganywhere.js";
 import { ing } from "./ing.js";
 import { io } from "./io.js";
 import { lunatech } from "./lunatech.js";
+import { mollie } from "./mollie.js";
 import { picnic } from "./picnic.js";
 import { studocu } from "./studoco.js";
 
@@ -28,6 +29,7 @@ export const adapters = [
   ing,
   io,
   lunatech,
+  mollie,
   picnic,
   studocu,
 ];
