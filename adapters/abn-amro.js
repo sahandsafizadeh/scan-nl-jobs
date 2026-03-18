@@ -26,12 +26,6 @@ export async function abnamro(page) {
     items.push(...jobs);
   }
 
-  if (page.getByRole("link", { name: "4" }).isVisible()) {
-    await page.getByRole("link", { name: "4" }).click();
-    jobs = await collectAbnamroJobs(page);
-    items.push(...jobs);
-  }
-
   return {
     company: "ABN AMRO",
     description: "ABN AMRO is a leading financial services company.",
