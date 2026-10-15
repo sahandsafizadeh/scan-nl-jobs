@@ -3,7 +3,7 @@
 // parts of the system can import it as a distinct concern, and it can even
 // be published if desired.
 
-const languageKeywords = new Set(["go", "golang", "java"]);
+const languageKeywords = new Set(["ai", "go", "golang", "java"]);
 const roleKeywords = new Set(["developer", "engineer"]);
 const otherKeywords = new Set([
   "web",
