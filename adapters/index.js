@@ -4,32 +4,47 @@ import { bitavo } from "./bitavo.js";
 import { bol } from "./bol.js";
 import { booking } from "./booking.js";
 import { bunq } from "./bunq.js";
-import { companyinfo } from "./company-info.js";
-import { eurail } from "./eurail.js";
 import { flowtraders } from "./flow-traders.js";
 import { housinganywhere } from "./housinganywhere.js";
 import { ing } from "./ing.js";
-import { io } from "./io.js";
-import { lunatech } from "./lunatech.js";
-import { mollie } from "./mollie.js";
 import { picnic } from "./picnic.js";
-import { studocu } from "./studoco.js";
 
 export const adapters = [
-  abnamro,
-  adyen,
-  bitavo,
-  bol,
-  booking,
+  // abnamro, // todo
+  // adyen,
+  // bitavo,
+  // bol,
+  // booking,
   bunq,
-  companyinfo,
-  eurail,
-  flowtraders,
-  housinganywhere,
-  ing,
-  io,
-  lunatech,
-  mollie,
-  picnic,
-  studocu,
+  // flowtraders,
+  // housinganywhere,
+  // ing,
+  // picnic,
 ];
+
+
+/*
+JetBrains
+Elastic
+Miro
+TomTom
+WeTransfer
+Backbase
+Coolblue
+AFAS Software
+Rabobank
+Mollie
+MessageBird
+Weaviate
+DataSnipper
+Framer
+Sendcloud
+Exact
+Bynder
+CM.com
+Finom
+Channable
+Optiver
+IMC Trading
+Flow Traders
+*/
