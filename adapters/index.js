@@ -4,6 +4,7 @@ import { bol } from "./bol.js";
 import { booking } from "./booking.js";
 import { bunq } from "./bunq.js";
 import { flowtraders } from "./flow-traders.js";
+import { imc } from "./imc.js";
 import { ing } from "./ing.js";
 import { jetbrains } from "./jetbrains.js";
 import { miro } from "./miro.js";
@@ -17,6 +18,7 @@ export const adapters = [
   booking,
   bunq,
   flowtraders,
+  imc,
   ing,
   jetbrains,
   miro,
@@ -26,10 +28,6 @@ export const adapters = [
 
 
 /*
-WeTransfer
-Backbase
-Coolblue
-AFAS Software
 Mollie
 MessageBird
 Weaviate
@@ -37,10 +35,8 @@ DataSnipper
 Framer
 Sendcloud
 Exact
-Bynder
 CM.com
 Finom
 Channable
 Optiver
-IMC Trading
 */
