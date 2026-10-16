@@ -5,7 +5,10 @@ import { booking } from "./booking.js";
 import { bunq } from "./bunq.js";
 import { flowtraders } from "./flow-traders.js";
 import { ing } from "./ing.js";
+import { jetbrains } from "./jetbrains.js";
+import { miro } from "./miro.js";
 import { picnic } from "./picnic.js";
+import { tomtom } from "./tomtom.js";
 
 export const adapters = [
   adyen,
@@ -15,15 +18,14 @@ export const adapters = [
   bunq,
   flowtraders,
   ing,
+  jetbrains,
+  miro,
   picnic,
+  tomtom,
 ];
 
 
 /*
-JetBrains
-Elastic
-Miro
-TomTom
 WeTransfer
 Backbase
 Coolblue
