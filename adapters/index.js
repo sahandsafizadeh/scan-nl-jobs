@@ -3,6 +3,7 @@ import { bitavo } from "./bitavo.js";
 import { bol } from "./bol.js";
 import { booking } from "./booking.js";
 import { bunq } from "./bunq.js";
+import { channable } from "./channable.js";
 import { flowtraders } from "./flow-traders.js";
 import { imc } from "./imc.js";
 import { ing } from "./ing.js";
@@ -17,6 +18,7 @@ export const adapters = [
   bol,
   booking,
   bunq,
+  channable,
   flowtraders,
   imc,
   ing,
@@ -29,14 +31,9 @@ export const adapters = [
 
 /*
 Mollie
-MessageBird
-Weaviate
-DataSnipper
 Framer
 Sendcloud
 Exact
 CM.com
-Finom
-Channable
 Optiver
 */
