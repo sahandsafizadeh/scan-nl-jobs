@@ -8,6 +8,7 @@ import { flowtraders } from "./flow-traders.js";
 import { imc } from "./imc.js";
 import { ing } from "./ing.js";
 import { jetbrains } from "./jetbrains.js";
+import { justeattakeaway } from "./just-eat-takeaway.js";
 import { miro } from "./miro.js";
 import { picnic } from "./picnic.js";
 import { tomtom } from "./tomtom.js";
@@ -23,17 +24,99 @@ export const adapters = [
   imc,
   ing,
   jetbrains,
+  justeattakeaway,
   miro,
   picnic,
   tomtom,
 ];
 
-
 /*
-Mollie
-Framer
-Sendcloud
-Exact
-CM.com
+Coolblue Coolblue - Careers at Coolblue
+Elastic Elastic
+Lightspeed Commerce
+bol Working at bol
+JetBrains Careers & Jobs in the Netherlands
+Unit4
 Optiver
+Exact
+Miro Open Positions at Miro
+Mews
+Mendix
+Planon Planon
+LOGEX
+Mollie
+Mambu
+Bynder
+TOPdesk TOPdesk Careers
+CM.com
+Leaseweb
+Eagle Eye Networks
+Finom jobs.eu.lever.co
+Sendcloud
+Fastned
+Bird
+Sana Commerce
+Tellent careers.tellent.com
+GoodHabitz
+Ohpen Core Banking Technology Jobs
+Lepaya
+Gain.pro
+HousingAnywhere
+Channable Platform Team
+Sensorfact
+Roamler
+Bitvavo
+Fourthline About Us
+Textkernel
+Sympower
+DataSnipper careers.datasnipper.com
+ChannelEngine
+Castor
+LUMICKS
+Virtuagym
+Tiqets
+TestGorilla
+Workwize goworkwize.com
+Creative Fabrica
+Futurewhiz
+Gradyent
+EclecticIQ
+Zivver
+VONQ
+Xomnia findmethatdamjob.nl
+Studocu
+Otrium
+Weaviate weaviate.io
+Samotics
+Dexter Energy
+Temper
+Foleon
+Framer framer.com
+i3D.net
+BUX
+Polarsteps
+Insify
+Source.ag
+Overstory job-boards.greenhouse.io
+FeedbackFruits
+Monumental Forward Deployed Robotics Engineer
+Trengo
+Cradle
+Amberscript
+Instruqt
+Smart Robotics
+Poki
+SkinVision LinkedIn
+Axual axual.com
+Pacmed
+kaiko.ai
+D2X
+BrainCreators
+UbiOps Jobs at UbiOps
+DuckDB Labs
+AppSignal
+Zeta Alpha
+Syntho
+Orq.ai
+Polars Careers
 */
