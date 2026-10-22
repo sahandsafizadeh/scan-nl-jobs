@@ -5,6 +5,7 @@ import { booking } from "./booking.js";
 import { bunq } from "./bunq.js";
 import { channable } from "./channable.js";
 import { coolblue } from "./coolblue.js";
+import { exact } from "./exact.js";
 import { flowtraders } from "./flow-traders.js";
 import { imc } from "./imc.js";
 import { ing } from "./ing.js";
@@ -23,6 +24,7 @@ export const adapters = [
   bunq,
   channable,
   coolblue,
+  exact,
   flowtraders,
   imc,
   ing,
@@ -35,7 +37,6 @@ export const adapters = [
 ];
 
 /*
-Exact
 Mews
 Mendix
 Planon Planon
