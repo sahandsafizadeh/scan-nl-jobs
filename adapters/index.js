@@ -4,12 +4,14 @@ import { bol } from "./bol.js";
 import { booking } from "./booking.js";
 import { bunq } from "./bunq.js";
 import { channable } from "./channable.js";
+import { coolblue } from "./coolblue.js";
 import { flowtraders } from "./flow-traders.js";
 import { imc } from "./imc.js";
 import { ing } from "./ing.js";
 import { jetbrains } from "./jetbrains.js";
 import { justeattakeaway } from "./just-eat-takeaway.js";
 import { miro } from "./miro.js";
+import { optiver } from "./optiver.js";
 import { picnic } from "./picnic.js";
 import { tomtom } from "./tomtom.js";
 
@@ -20,26 +22,20 @@ export const adapters = [
   booking,
   bunq,
   channable,
+  coolblue,
   flowtraders,
   imc,
   ing,
   jetbrains,
   justeattakeaway,
   miro,
+  optiver,
   picnic,
   tomtom,
 ];
 
 /*
-Coolblue Coolblue - Careers at Coolblue
-Elastic Elastic
-Lightspeed Commerce
-bol Working at bol
-JetBrains Careers & Jobs in the Netherlands
-Unit4
-Optiver
 Exact
-Miro Open Positions at Miro
 Mews
 Mendix
 Planon Planon
