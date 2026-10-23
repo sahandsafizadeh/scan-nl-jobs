@@ -6,6 +6,7 @@ import { bunq } from "./bunq.js";
 import { channable } from "./channable.js";
 import { coolblue } from "./coolblue.js";
 import { exact } from "./exact.js";
+import { fastned } from "./fastned.js";
 import { flowtraders } from "./flow-traders.js";
 import { imc } from "./imc.js";
 import { ing } from "./ing.js";
@@ -26,6 +27,7 @@ export const adapters = [
   channable,
   coolblue,
   exact,
+  fastned,
   flowtraders,
   imc,
   ing,
@@ -39,15 +41,6 @@ export const adapters = [
 ];
 
 /*
-Mambu
-Bynder
-TOPdesk TOPdesk Careers
-CM.com
-Leaseweb
-Eagle Eye Networks
-Finom jobs.eu.lever.co
-Sendcloud
-Fastned
 Bird
 Sana Commerce
 Tellent careers.tellent.com
