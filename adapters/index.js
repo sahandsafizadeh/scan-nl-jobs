@@ -12,6 +12,7 @@ import { ing } from "./ing.js";
 import { jetbrains } from "./jetbrains.js";
 import { justeattakeaway } from "./just-eat-takeaway.js";
 import { miro } from "./miro.js";
+import { mollie } from "./mollie.js";
 import { optiver } from "./optiver.js";
 import { picnic } from "./picnic.js";
 import { tomtom } from "./tomtom.js";
@@ -31,17 +32,13 @@ export const adapters = [
   jetbrains,
   justeattakeaway,
   miro,
+  mollie,
   optiver,
   picnic,
   tomtom,
 ];
 
 /*
-Mews
-Mendix
-Planon Planon
-LOGEX
-Mollie
 Mambu
 Bynder
 TOPdesk TOPdesk Careers
