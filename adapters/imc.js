@@ -5,6 +5,12 @@ export async function imc(page) {
   await page.getByRole("button", { name: "Accept All Cookies" }).click();
   await page
     .locator("label")
+    .filter({ hasText: "Experience levelAll" })
+    .locator("svg")
+    .click();
+  await page.getByText("Experienced").first().click();
+  await page
+    .locator("label")
     .filter({ hasText: "LocationAll" })
     .locator("svg")
     .click();

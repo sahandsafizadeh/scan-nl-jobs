@@ -9,6 +9,9 @@ export async function optiver(page) {
   await page.getByRole("combobox", { name: "Department" }).click();
   await page.getByRole("option", { name: "Technology" }).click();
   await page.keyboard.press("Escape");
+  await page.getByRole("combobox", { name: "Level" }).click();
+  await page.getByRole("option", { name: "Experienced" }).click();
+  await page.keyboard.press("Escape");
   await page.waitForTimeout(1000);
 
   const items = await page
