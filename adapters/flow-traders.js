@@ -2,25 +2,22 @@ import { collectJobs } from "../utils/index.js";
 
 export async function flowtraders(page) {
   await page.goto("https://www.flowtraders.com/careers/job-search");
-  await page.getByRole("button", { name: "Accept all" }).click();
-  await page.locator(".w-full.flex.items-center.h-4").first().click();
-  await page.locator("#filter").getByText("Technology").click();
-  await page.locator("div").filter({ hasText: "Keyword" }).nth(2).click();
-  await page.getByRole("img").filter({ hasText: /^$/ }).nth(5).click();
+  const filter = page.locator("#filter");
+  await filter.waitFor();
+  // The cookie banner doesn't always show up
   await page
-    .locator("div")
-    .filter({ hasText: /^Amsterdam$/ })
-    .nth(3)
-    .click();
-  await page.locator("div").filter({ hasText: "Keyword" }).nth(2).click();
-  await page.getByRole("button", { name: "Search" }).click();
-  await page.waitForTimeout(1000);
+    .getByRole("button", { name: "Accept all" })
+    .click({ timeout: 3000 })
+    .catch(() => { });
 
-  const items = await page
-    .locator("h2")
-    .filter({ hasClass: /syneFont/ })
-    .filter({ hasClass: /text-\[#161616\]/ })
-    .all();
+  await filter.getByText("Select a location").click();
+  await filter.getByText("Amsterdam", { exact: true }).click();
+  await filter.getByText("Select a division").click();
+  await filter.getByText("Technology", { exact: true }).click();
+  await page.getByRole("button", { name: "Search" }).click();
+  await page.waitForTimeout(2000);
+
+  const items = await page.locator("h2.syneFont").all();
 
   return collectJobs(
     "Flow Traders",
