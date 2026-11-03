@@ -9,6 +9,7 @@ import { datasnipper } from "./datasnipper.js";
 import { exact } from "./exact.js";
 import { fastned } from "./fastned.js";
 import { flowtraders } from "./flow-traders.js";
+import { i3d } from "./i3d.js";
 import { imc } from "./imc.js";
 import { ing } from "./ing.js";
 import { jetbrains } from "./jetbrains.js";
@@ -31,6 +32,7 @@ export const adapters = [
   exact,
   fastned,
   flowtraders,
+  i3d,
   imc,
   ing,
   jetbrains,
@@ -43,10 +45,6 @@ export const adapters = [
 ];
 
 /*
-i3D.net
-BUX
-D2X
-
 Roamler
 Textkernel
 Sympower
