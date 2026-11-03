@@ -5,6 +5,7 @@ import { booking } from "./booking.js";
 import { bunq } from "./bunq.js";
 import { channable } from "./channable.js";
 import { coolblue } from "./coolblue.js";
+import { datasnipper } from "./datasnipper.js";
 import { exact } from "./exact.js";
 import { fastned } from "./fastned.js";
 import { flowtraders } from "./flow-traders.js";
@@ -26,6 +27,7 @@ export const adapters = [
   bunq,
   channable,
   coolblue,
+  datasnipper,
   exact,
   fastned,
   flowtraders,
@@ -41,22 +43,13 @@ export const adapters = [
 ];
 
 /*
-Bird
-Sana Commerce
-Tellent careers.tellent.com
-GoodHabitz
-Ohpen Core Banking Technology Jobs
-Lepaya
-Gain.pro
-HousingAnywhere
-Channable Platform Team
-Sensorfact
+i3D.net
+BUX
+D2X
+
 Roamler
-Bitvavo
-Fourthline About Us
 Textkernel
 Sympower
-DataSnipper careers.datasnipper.com
 ChannelEngine
 Castor
 LUMICKS
@@ -71,7 +64,6 @@ EclecticIQ
 Zivver
 VONQ
 Xomnia findmethatdamjob.nl
-Studocu
 Otrium
 Weaviate weaviate.io
 Samotics
@@ -79,10 +71,7 @@ Dexter Energy
 Temper
 Foleon
 Framer framer.com
-i3D.net
-BUX
 Polarsteps
-Insify
 Source.ag
 Overstory job-boards.greenhouse.io
 FeedbackFruits
@@ -97,13 +86,5 @@ SkinVision LinkedIn
 Axual axual.com
 Pacmed
 kaiko.ai
-D2X
 BrainCreators
-UbiOps Jobs at UbiOps
-DuckDB Labs
-AppSignal
-Zeta Alpha
-Syntho
-Orq.ai
-Polars Careers
 */
